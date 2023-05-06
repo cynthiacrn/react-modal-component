@@ -21,9 +21,3 @@
   gap: 36px;
   border-radius: 8px;
 }
-.success-modal__close-icon {
-  color: #92ac1885;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}

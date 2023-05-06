@@ -9,7 +9,10 @@ var _react = _interopRequireDefault(require("react"));
 require("./SuccessModal.css");
 function SuccessModal(_ref) {
   var open = _ref.open,
-    setOpen = _ref.setOpen;
+    setOpen = _ref.setOpen,
+    _ref$containerStyle = _ref.containerStyle,
+    containerStyle = _ref$containerStyle === void 0 ? {} : _ref$containerStyle,
+    children = _ref.children;
   if (open) {
     return /*#__PURE__*/_react["default"].createElement("div", {
       className: "success-modal",
@@ -17,13 +20,9 @@ function SuccessModal(_ref) {
         return setOpen(false);
       }
     }, /*#__PURE__*/_react["default"].createElement("div", {
-      className: "success-modal__content"
-    }, /*#__PURE__*/_react["default"].createElement("p", null, "Employee Created!"), /*#__PURE__*/_react["default"].createElement("span", {
-      onClick: function onClick() {
-        return setOpen(false);
-      },
-      className: "success-modal__close-icon"
-    }, "\xD7")));
+      className: "success-modal__content",
+      style: containerStyle
+    }, children));
   }
   return null;
 }
