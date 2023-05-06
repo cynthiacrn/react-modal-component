@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, {useState} from 'react';
+import { render } from "react-dom";
+import { SuccessModal } from "./lib";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+  const [open, setOpen] = useState(false)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  return (
+    <div>
+      <h1>Success Modal</h1>
+      <button onClick={() => setOpen(true)}>Open Modal</button>
+      <SuccessModal open={open} setOpen={setOpen} />
+    </div>
+  );
+}
+
+render(<App />, document.getElementById("root"));
