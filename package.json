@@ -2,11 +2,23 @@
   "name": "@cynthiaaa_crn/success-modal",
   "version": "0.1.2",
   "license": "MIT",
+  "author": "Caron Cynthia",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
+  "description": "This is a simple success modal for my openclassrooms project",
+  "keywords": [
+    "react",
+    "component",
+    "modal",
+    "openclassrooms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cynthiacrn/react-modal-component"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build-examples": "react-scripts build",
