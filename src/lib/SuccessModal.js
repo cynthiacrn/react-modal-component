@@ -27,4 +27,3 @@ function SuccessModal({ open, setOpen, containerStyle = {}, children }) {
 }
 
 export default SuccessModal
-
